@@ -1,0 +1,16 @@
+/* Barra de navegacion */
+.navbar {
+padding: 2rem;
+background-color: black;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+/* Esconder el logo */
+/* Adaptable (responsivo) */
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
