@@ -7,10 +7,120 @@ background-color: black;
     align-items: center;
     justify-content: space-between;
 }
-/* Esconder el logo */
-/* Adaptable (responsivo) */
+     /* Esconder el logo */
+     /* Adaptable (responsivo) */
 @media screen and (max-width: 767px){
     .navbar-brand{
         display: none;
     }
+}
+/* Estilos generales */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Seccion Hero */
+     /* min-height le permitimos que se estire */
+.hero{
+    background-color: #0C0E12;
+    color: white;
+    min-height: 450px;
+    text-align:center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+.hero-imagen-desarrollador{
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    margin: 20px;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: white;
+}
+     /* Medida relativa 2.5rem al tamaño de la letra raiz */
+h1{
+    font-size: 2.5rem;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
+/* Seccion sobre mi */
+.seccion-oscura{
+    color: white;
+    background-color: #000;
+}
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+    /* Estilos generales */
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Concert One", sans-serif;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+/* Seccion experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+/* Eliminamos esta regla ,solo como referencia */
+        /* .experiencia .row div{
+        height: 250px;
+        background-color: aqua;
+        border: 3px solid orange;
+        } */
+.seccion-clara{
+    color: #000;
+    background-color: #F8F9FA;
+}
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.experiencia i {
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #0C0E12;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.badges-contenedor{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges {
+    margin: 5px;
+}
+.experiencia .columna{
+    padding: 20px;
+    border:2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Equitativamente los elementos en el eje principal */
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia .columna:hover {
+    color: white;
+    background-color: #0C0E12;
 }

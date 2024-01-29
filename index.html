@@ -13,12 +13,18 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- css -->
   <link href="style.css" rel="stylesheet">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Barra de navegacion -->
-  <!-- Cambiar lg a -md -->
+       <!-- Cambiar lg a -md -->
   <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
       <!-- Cambiamos por data-bs-target="#navbar-toggler" # problema -->
@@ -55,12 +61,75 @@
       </div>
     </div>
   </nav>
-  <!-- Seccion hero -->
-  <section>
-    <div>
-      <img>
+  <!-- Seccion Hero -->
+       <!-- Se estiren para llenar el contenedor align-items-stretch -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+       <!-- Para que se convierta en circulo la imagen el borde rounded-circle , eliminamos border-radius: 50%; -->
+      <img class="hero-imagen-desarrollador rounded-circle" src="images/Avatar.png" alt="Foto de AlexTech">
       <h1>HOLA , SOY ALEX BRITO</h1>
       <h2>Desarrollador y Creativo</h2>
+    </div>
+    <div class="hero-inferior">
+       <!-- Imagen se adapte al ancho del navegador img-fluid -->
+      <img class="hero-inferior-imagen img-fluid" src="images/hero-inferior.svg" alt="Monitor , laptop y logos de HTML , CSS , Bootstrap">
+
+    </div>
+  </section>
+  <!-- Acerca de mi about me -->
+        <!-- Seccion 2 -->
+  <section class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+        <!-- Podemos eliminar seccion-titulo texto-blanco -->
+      <h2 class="seccion-titulo">Conoce a Alex Brito</h2>
+      <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Augue eget arcu dictum varius duis at consectetur lorem. Nibh cras pulvinar mattis nunc sed. Porta non pulvinar neque laoreet suspendisse interdum. Vivamus arcu felis bibendum ut tristique. Venenatis urna cursus eget nunc scelerisque viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Lacus sed turpis tincidunt id. Purus viverra accumsan in nisl nisi scelerisque. Nibh tortor id aliquet lectus proin nibh.</p>
+    </div>
+  </section>
+  <!-- Acerca de de experiencia -->
+        <!-- Seccion 3 -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+        <!-- fila -->
+      <div class="row">
+        <!-- Columnas -->
+              <!-- Desarrollo -->
+      <div class="columna col-12 col-md-4">
+              <!-- Icono bootstrap -->
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Desarrollo Web</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra conva</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-success">HTML</span>
+          <span class="badge text-bg-danger">CSS</span>
+          <span class="badge text-bg-warning">JavaScript</span>
+          <span class="badge text-bg-info">React</span>
+        </div>
+      </div >
+              <!-- Articulos -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-book"></i>
+        <p class="experiencia-titulo">Articulos</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra conva</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-success">Escribir</span>
+          <span class="badge text-bg-danger">Editar</span>
+          <span class="badge text-bg-warning">Blogs</span>
+        </div>
+      </div >
+              <!-- Estudiante -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-code-slash"></i>
+        <p class="experiencia-titulo">Estudiante</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra conva</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-success">Microsoft</span>
+          <span class="badge text-bg-danger">Còdigo Facilito</span>
+          <span class="badge text-bg-warning">IBM</span>
+          <span class="badge text-bg-info">React</span>
+        </div>
+      </div >
+
+      </div>
     </div>
   </section>
   <!-- Bootstrap -->
