@@ -261,14 +261,93 @@
     </div>
     <!-- Agregar boton -->
     <a href="https://github.com/AlexGasperCode" target="_blank" rel="noopener noreferrer">
-    <button type="button" class="btn btn-danger">
+      <button type="button" class="btn btn-danger">
       Ver màs proyectos 
       <i class="bi bi-arrow-right-circle-fill"></i>
-    </button>
-  </a>
+      </button>
+    </a>
   </section>
+  <!-- Seccion articulos -->
+  <section class="articulos justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Articulos</h2>
+          <!-- Eliminamos ese stylo style="width: 18rem;" -->
+    <div class="card">
+      <div class="card-header">
+        Mas recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://alexbritobitacoras.blogspot.com/2024/01/tecnico-helpdesk.html" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Soporte tècnico HelpDesk o mesa de ayuda</li>
+        </a>
+        <a href="https://alexbritobitacoras.blogspot.com/2023/12/400-comandos-linux.html" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">400 comandos bàsicos para Linux </li>
+        </a>
+        <a href="https://alexbritobitacoras.blogspot.com/2023/11/html-para-frontend-parte-3.html" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">HTML escritura de marcado para programadores FrontEnd</li>
+        </a>
+        <a href="https://alexbritobitacoras.blogspot.com/2023/11/css-hojas-de-estilo-en-cascada.html" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">Hojas de estilo en cascada para programadores FrontEnd</li>
+        </a>
+      </ul>
+    </div>
+          <!-- Creamos boton -->
+          <a href="https://alexbritobitacoras.blogspot.com/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-danger">
+            Ver màs articulos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </a>
 
-  <!-- Bootstrap -->
+  </section>
+  <!-- Testimonios -->
+  <section class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+         <!-- Carrusel -->
+         <div id="testimonios-carrusel" class="carousel slide carousel-dark">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="images/cliente1.svg" alt="Foto cliente1">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan.</p>
+              <div class="testimonio-info">
+              <p class="cliente">Luis Mora</p>
+              <p class="cargo">Gerente de proyectos MICROSOFT</p>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="images/cliente2.svg" alt="Foto cliente1">
+                <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan.</p>
+                <div class="testimonio-info">
+                <p class="cliente">Maria Arias</p>
+                <p class="cargo">Gerente de proyectos AMAZON</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="images/cliente3.svg" alt="Foto cliente1">
+                <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan.</p>
+                <div class="testimonio-info">
+                <p class="cliente">Maria Burf</p>
+                <p class="cargo">Gerente de proyectos IBM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+  </section>
+      <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
